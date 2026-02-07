@@ -17,7 +17,6 @@ PoolManager.Initialize.handler(async ({ event, context }) => {
     return;
   }
 
-  // Check if this is a hooked pool by looking at the hooks address
   // Define isHookedPool at the start
   const isHookedPool =
     event.params.hooks !== "0x0000000000000000000000000000000000000000";

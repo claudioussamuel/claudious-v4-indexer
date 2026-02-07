@@ -19,7 +19,6 @@ const updateTicks = async (
   event: PoolManager_ModifyLiquidity_event,
   poolId: string
 ) => {
-  // Get chain config for pools to skip
   // tick entities
   const lowerTickIdx = Number(event.params.tickLower);
   const upperTickIdx = Number(event.params.tickUpper);
