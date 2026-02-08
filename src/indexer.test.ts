@@ -1,6 +1,6 @@
 /**
  * E2E Integration test for Uniswap V4 Indexer
- * 
+
  * Tests all event handlers (Initialize, Swap, ModifyLiquidity) using real blockchain data
  * from the new HyperIndex v3 testing framework.
  */
