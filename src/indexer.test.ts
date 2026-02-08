@@ -1,12 +1,13 @@
 /**
  * E2E Integration test for Uniswap V4 Indexer
- * dsd
+ * 
  * Tests all event handlers (Initialize, Swap, ModifyLiquidity) using real blockchain data
  * from the new HyperIndex v3 testing framework.
  */
 
 import { describe, it, expect } from "vitest";
 import { createTestIndexer } from "generated";
+
 
 describe("Uniswap V4 Indexer", () => {
   it("Create Ticks even if we don't know about the pool", async () => {
