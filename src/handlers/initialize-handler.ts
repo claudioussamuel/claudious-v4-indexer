@@ -17,6 +17,7 @@ PoolManager.Initialize.handler(async ({ event, context }) => {
     return;
   }
 
+  // Define helper function to create initial tick
   // Define isHookedPool at the start
   const isHookedPool =
     event.params.hooks !== "0x0000000000000000000000000000000000000000";

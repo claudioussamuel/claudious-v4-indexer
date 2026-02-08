@@ -40,7 +40,7 @@ PoolManager.Swap.handler(async ({ event, context }) => {
   }
 
   const chainConfig = getChainConfig(event.chainId);
-
+// Safety check to skip processing for pools that are meant to be skipped
   // NOTE: Subgraph only has this check in Initialize handler since skipped pools
   // are never created, but we keep it here for safety in case we switch to
   // getOrThrow APIs in the future and don't want exceptions thrown
